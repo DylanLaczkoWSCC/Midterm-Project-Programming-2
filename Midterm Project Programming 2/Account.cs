@@ -13,10 +13,12 @@ namespace Midterm_Project_Programming_2
 
         public CheckingAccount(string accountNumber, decimal balance)
         {
+            //variables
             this.accountNumber = accountNumber;
             this.balance = balance;
         }
 
+        //Call function
         public decimal GetBalance()
         {
             return balance;
@@ -31,10 +33,12 @@ namespace Midterm_Project_Programming_2
 
         public SavingsAccount(string accountNumber, decimal balance)
         {
+            //variables
             this.accountNumber = accountNumber;
             this.balance = balance;
         }
 
+        //Call function
         public decimal GetBalance()
         {
             return balance;

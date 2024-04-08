@@ -20,6 +20,7 @@ namespace Midterm_Project_Programming_2
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //SQL Interaction
             string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\laczk\Downloads\WSCC\Programming 2\Midterm Programming 2\Midterm Project Programming 2\Midterm Project Programming 2\Database Mid.mdf"";Integrated Security=True;Connect Timeout=30;";
             if (txbCustomerNumber.Text == "" || txbPIN.Text == "")
             {
@@ -39,6 +40,8 @@ namespace Midterm_Project_Programming_2
                 adapt.Fill(ds);
                 con.Close();
                 int count = ds.Tables[0].Rows.Count;
+
+                //Output
                 //If count is equal to 1, than show frmMain form
                 if (count == 1)
                 {
